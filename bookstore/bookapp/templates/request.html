@@ -2,7 +2,7 @@
 
 <h1> Make a Request </h1>
 
-    <form action = "" method = "POST">
+    <form action = "{% url 'request' %}" method = "POST">
         {% csrf_token %}
         {{form.as_p}}
         <input type = "submit" id = "submit">
