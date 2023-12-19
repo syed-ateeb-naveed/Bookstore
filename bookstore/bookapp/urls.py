@@ -4,4 +4,5 @@ from . import views
 urlpatterns = [
     path('request/', views.makeRequest, name="request"),
     path('success/', views.successPage, name="success_page"),
+    path('failure/', views.failurePage, name="failure_page"),
 ]
