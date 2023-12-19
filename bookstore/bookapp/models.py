@@ -8,3 +8,6 @@ class Request(models.Model):
     author = models.CharField(max_length = 100)
     date = models.DateField(default = date.today())
     comment = models.CharField(max_length = 1000)
+
+    def __str__(self) -> str:
+        return self.title
