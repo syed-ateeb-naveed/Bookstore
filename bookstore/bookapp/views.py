@@ -3,6 +3,9 @@ from .forms import RequestForm
 from .models import Request as RequestModel
 
 # Create your views here.
+def index(request):
+    return render(request, "index.html", context={})
+
 
 def makeRequest(request):
     form = RequestForm()
