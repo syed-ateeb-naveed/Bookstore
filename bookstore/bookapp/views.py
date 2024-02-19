@@ -31,3 +31,6 @@ def successPage(request):
 def failurePage(request):
 
     return HttpResponse("Already submitted!")
+
+def catalogue(request):
+    return render(request, "catalogue.html", context={})
